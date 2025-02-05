@@ -1,0 +1,77 @@
+version: "3.1"
+
+rules:
+  - rule: Turn on Wi-Fi
+    steps:
+      - intent: wifi_on
+      - action: utter_wifi_on
+
+  - rule: Turn off Wi-Fi
+    steps:
+      - intent: wifi_off
+      - action: utter_wifi_off
+
+  - rule: Turn on Bluetooth
+    steps:
+      - intent: bluetooth_on
+      - action: utter_bluetooth_on
+
+  - rule: Turn off Bluetooth
+    steps:
+      - intent: bluetooth_off
+      - action: utter_bluetooth_off
+
+  - rule: Turn on Mobile Data
+    steps:
+      - intent: mobiledata_on
+      - action: utter_mobiledata_on
+
+  - rule: Turn off Mobile Data
+    steps:
+      - intent: mobiledata_off
+      - action: utter_mobiledata_off
+
+  - rule: Turn on Flashlight
+    steps:
+      - intent: flashlight_on
+      - action: utter_flashlight_on
+
+  - rule: Turn off Flashlight
+    steps:
+      - intent: flashlight_off
+      - action: utter_flashlight_off
+
+  - rule: Play Music
+    steps:
+      - intent: play_music
+      - action: utter_play_music
+
+  - rule: Read Message
+    steps:
+      - intent: read_message
+      - action: utter_read_message
+
+  - rule: Open App
+    steps:
+      - intent: open_app
+      - action: utter_open_app
+
+  - rule: Increase Volume
+    steps:
+      - intent: volume_up
+      - action: utter_volume_up
+
+  - rule: Decrease Volume
+    steps:
+      - intent: volume_down
+      - action: utter_volume_down
+
+  - rule: Mute Volume
+    steps:
+      - intent: volume_mute
+      - action: utter_volume_mute
+
+  - rule: Set Alarm
+    steps:
+      - intent: set_alarm
+      - action: utter_set_alarm
