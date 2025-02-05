@@ -1,0 +1,85 @@
+version: "3.1"
+stories:
+  - story: Turn on Wi-Fi
+    steps:
+      - intent: wifi_on
+      - action: utter_wifi_on
+
+  - story: Turn off Wi-Fi
+    steps:
+      - intent: wifi_off
+      - action: utter_wifi_off
+
+  - story: Turn on Bluetooth
+    steps:
+      - intent: bluetooth_on
+      - action: utter_bluetooth_on
+
+  - story: Turn off Bluetooth
+    steps:
+      - intent: bluetooth_off
+      - action: utter_bluetooth_off
+
+  - story: Turn on Mobile Data
+    steps:
+      - intent: mobiledata_on
+      - action: utter_mobiledata_on
+
+  - story: Turn off Mobile Data
+    steps:
+      - intent: mobiledata_off
+      - action: utter_mobiledata_off
+
+  - story: Turn on Flashlight
+    steps:
+      - intent: flashlight_on
+      - action: utter_flashlight_on
+
+  - story: Turn off Flashlight
+    steps:
+      - intent: flashlight_off
+      - action: utter_flashlight_off
+
+  - story: Play Music
+    steps:
+      - intent: play_music
+      - action: utter_play_music
+
+  - story: Read Message
+    steps:
+      - intent: read_message
+      - action: utter_read_message
+
+  - story: Open App
+    steps:
+      - intent: open_app
+      - action: utter_open_app
+      # Optionally, if you use a custom action to handle app opening:
+      # - action: action_open_app
+
+  - story: Increase Volume
+    steps:
+      - intent: volume_up
+      - action: utter_volume_up
+
+  - story: Decrease Volume
+    steps:
+      - intent: volume_down
+      - action: utter_volume_down
+
+  - story: Mute Volume
+    steps:
+      - intent: volume_mute
+      - action: utter_volume_mute
+
+  - story: Set Alarm (without date/month)
+    steps:
+      - intent: set_alarm
+      - action: utter_set_alarm
+
+  - story: Set Alarm (with date/month)
+    steps:
+      - intent: set_alarm
+      - action: utter_set_alarm
+      # If you use a custom action to process alarm details, include it:
+      # - action: action_set_alarm
