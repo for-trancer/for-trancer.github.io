@@ -1,0 +1,77 @@
+version: "3.1"
+
+intents:
+  - wifi_on
+  - wifi_off
+  - bluetooth_on
+  - bluetooth_off
+  - mobiledata_on
+  - mobiledata_off
+  - flashlight_on
+  - flashlight_off
+  - play_music
+  - read_message
+  - open_app
+  - volume_up
+  - volume_down
+  - volume_mute
+  - set_alarm
+
+entities:
+  - app_name
+  - date
+  - hour
+  - minute
+  - month
+  - period
+
+slots:
+  app_name:
+    type: text
+  date:
+    type: text
+  hour:
+    type: text
+  minute:
+    type: text
+  month:
+    type: text
+  period:
+    type: text
+
+responses:
+  utter_wifi_on:
+    - text: "Turning on Wi-Fi."
+  utter_wifi_off:
+    - text: "Turning off Wi-Fi."
+  utter_bluetooth_on:
+    - text: "Turning on Bluetooth."
+  utter_bluetooth_off:
+    - text: "Turning off Bluetooth."
+  utter_mobiledata_on:
+    - text: "Turning on mobile data."
+  utter_mobiledata_off:
+    - text: "Turning off mobile data."
+  utter_flashlight_on:
+    - text: "Turning on flashlight."
+  utter_flashlight_off:
+    - text: "Turning off flashlight."
+  utter_play_music:
+    - text: "Playing music."
+  utter_read_message:
+    - text: "Reading your messages."
+  utter_open_app:
+    - text: "Opening {app_name}."
+  utter_volume_up:
+    - text: "Increasing volume."
+  utter_volume_down:
+    - text: "Decreasing volume."
+  utter_volume_mute:
+    - text: "Muting volume."
+  utter_set_alarm:
+    - text: "Setting an alarm for {hour}:{minute} {period} on {date} {month}."
+    - text: "Setting an alarm for {hour}:{minute} {period}."
+
+actions:
+  - action_open_app
+  - action_set_alarm
