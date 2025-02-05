@@ -31,37 +31,37 @@ slots:
     mappings:
       - type: from_entity
         entity: app_name
-        intent: open_app
+      - type: from_text
   date:
     type: text
     mappings:
       - type: from_entity
         entity: date
-        intent: set_alarm
+      - type: from_text
   hour:
     type: text
     mappings:
       - type: from_entity
         entity: hour
-        intent: set_alarm
+      - type: from_text
   minute:
     type: text
     mappings:
       - type: from_entity
         entity: minute
-        intent: set_alarm
+      - type: from_text
   month:
     type: text
     mappings:
       - type: from_entity
         entity: month
-        intent: set_alarm
+      - type: from_text
   period:
     type: text
     mappings:
       - type: from_entity
         entity: period
-        intent: set_alarm
+      - type: from_text
 
 responses:
   utter_wifi_on:
