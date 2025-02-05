@@ -1,0 +1,437 @@
+version: "3.1"
+nlu:
+- intent: wifi_on
+  examples: |
+    - Turn on Wi-Fi
+    - Enable Wi-Fi
+    - Switch on the Wi-Fi
+    - Activate Wi-Fi
+    - Wi-Fi on
+    - Power on Wi-Fi
+    - Start Wi-Fi
+    - Connect to Wi-Fi
+    - Resume Wi-Fi
+    - Enable my Wi-Fi
+    - Turn my Wi-Fi on
+    - Switch on my internet connection
+    - Activate the Wi-Fi network
+    - Enable the wireless network
+    - Turn on the wireless connection
+    - Please turn on Wi-Fi
+    - I need Wi-Fi on
+    - Can you enable Wi-Fi
+    - Turn Wi-Fi back on
+
+- intent: wifi_off
+  examples: |
+    - Turn off Wi-Fi
+    - Disable Wi-Fi
+    - Switch off the Wi-Fi
+    - Deactivate Wi-Fi
+    - Wi-Fi off
+    - Power off Wi-Fi
+    - Stop Wi-Fi
+    - Disconnect from Wi-Fi
+    - Turn my Wi-Fi off
+    - Shut down WiFi
+    - Please disable Wi-Fi
+    - I need Wi-Fi off
+    - Can you turn off Wi-Fi
+    - Turn Wi-Fi back off
+    - Stop the wireless network
+    - Disable my internet connection
+    - Switch off my wireless connection
+    - Deactivate the Wi-Fi network
+
+- intent: bluetooth_on
+  examples: |
+    - Enable Bluetooth
+    - Turn on Bluetooth
+    - Activate Bluetooth
+    - Bluetooth on
+     - Power on Bluetooth
+    - Start Bluetooth
+    - Switch on Bluetooth
+    - Connect Bluetooth
+    - Please enable Bluetooth
+    - I need Bluetooth on
+    - Can you turn on Bluetooth?
+    - Turn my Bluetooth on
+    - Activate my Bluetooth connection
+    - Resume Bluetooth
+    - Enable my wireless connection
+    - Turn on the Bluetooth device
+    - Start my Bluetooth service
+    - Enable Bluetooth for pairing
+    - Bluetooth should be on
+
+- intent: bluetooth_off
+  examples: |
+    - Disable Bluetooth
+    - Turn off Bluetooth
+    - Deactivate Bluetooth
+    - Bluetooth off
+    - Power off Bluetooth
+    - Stop Bluetooth
+    - Switch off Bluetooth
+    - Disconnect Bluetooth
+    - Please disable Bluetooth
+    - I need Bluetooth off
+    - Can you turn off Bluetooth?
+    - Turn my Bluetooth off
+    - Shut down Bluetooth
+    - Stop my Bluetooth connection
+    - Disable my Bluetooth service
+    - Turn off the Bluetooth device
+    - Deactivate my Bluetooth connection
+    - Bluetooth should be off
+    - Please switch off Bluetooth
+
+- intent: mobiledata_on
+  examples: |
+    - Turn on mobile data
+    - Enable mobile data
+    - Activate mobile data
+    - Switch on data
+    - Mobile data on
+    - Power on mobile data
+    - Start mobile data
+    - Enable my internet
+    - Turn my data on
+    - Please turn on mobile data
+    - I need mobile data on
+    - Can you enable mobile data?
+    - Activate my mobile internet
+    - Resume mobile data
+    - Switch on my internet connection
+    - Turn on cellular data
+    - Enable my network data
+    - Start my mobile data service
+    - Mobile data should be on
+
+- intent: mobiledata_off
+  examples: |
+    - Turn off mobile data
+    - Disable mobile data
+    - Deactivate mobile data
+    - Switch off data
+    - Mobile data off
+    - Stop mobile data
+    - Turn off cellular data
+    - Disable my internet
+    - Disconnect mobile data
+    - Please turn off mobile data
+    - I need mobile data off
+    - Can you disable mobile data?
+    - Deactivate my mobile internet
+    - Switch off my internet connection
+    - Turn off my network data
+    - Stop my mobile data service
+    - Mobile data should be off
+  
+- intent: flashlight_on
+  examples: |
+    - Turn on flashlight
+    - Enable torch
+    - Switch on the flashlight
+    - Activate the torch
+    - Flashlight on
+    - Power on the flashlight
+    - Start the torch
+    - Please turn on the flashlight
+    - I need the flashlight on
+    - Can you switch on my torch?
+    - Enable my phone light
+    - Activate my flashlight
+    - Light up my flashlight
+    - Switch on my phone’s torch
+    - Turn on the phone’s light
+    - Start the flashlight
+
+- intent: flashlight_off
+  examples: |
+    - Turn off flashlight
+    - Disable torch
+    - Switch off the flashlight
+    - Deactivate the torch
+    - Flashlight off
+    - Power off the flashlight
+    - Stop the torch
+    - Please turn off the flashlight
+    - I need the flashlight off
+    - Can you switch off my torch?
+    - Disable my phone light
+    - Deactivate my flashlight
+    - Turn off my phone’s torch
+    - Shut down the flashlight
+    - Stop my phone light
+    - Switch off my flashlight
+
+- intent: play_music
+  examples: |
+    - Play some music
+    - Start playing songs
+    - Play my favorite track
+    - Play a song
+    - Turn on the music
+    - Play my playlist
+    - Start my favorite song
+    - Can you play some songs?
+    - I want to hear some music
+    - Put on some tunes
+    - Play something relaxing
+    - Start playing my saved songs
+    - Play music from my library
+    - Turn on the audio
+    - Begin the music
+    - Shuffle and play music
+    - Play a random song
+    - Play trending songs
+    - Play music
+
+- intent: read_message
+  examples: |
+    - Read my messages
+    - Check my SMS
+    - Read my last text
+    - Read recent messages
+    - Show me my messages
+    - Read the latest SMS
+    - Can you check my texts?
+    - Tell me my last received message
+    - Read my unread messages
+    - Show my text messages
+    - Read my last WhatsApp message
+    - Check my notifications
+    - Read out my incoming texts
+    - Tell me if I have any messages
+    - Read my latest text aloud
+    - Do I have any unread messages?
+    - Read the most recent notification
+  
+- intent: open_app
+  examples: |
+    - Open [WhatsApp](app_name)
+    - Launch [YouTube](app_name)
+    - Start [Instagram](app_name)
+    - Open my [Facebook](app_name) app
+    - Open [{app_name}](app_name)
+    - Launch [{app_name}](app_name)
+    - Start [{app_name}](app_name)
+
+  entities:
+    app_name:
+      - WhatsApp
+      - YouTube
+      - Instagram
+      - Facebook
+      - Settings
+      - Setting
+      - Google Maps
+      - Spotify
+      - Discord
+      - Camera
+      - Contact
+      - Contacts
+      - Messages
+      - Message
+      - Music
+      - Gallery
+      - Photos
+      - Google Photos
+      - Gmail
+      - Email
+      - Google Drive
+      - Google Play Store
+      - Playstore
+
+- intent: volume_up
+  examples: |
+    - Increase volume
+    - Turn up the sound
+    - Raise the volume
+    - Make it louder
+    - Volume up
+    - Boost the volume
+    - Turn up my speaker
+    - Max out the volume
+    - Make the sound higher
+    - I can't hear, increase the volume
+    - Set the volume to maximum
+    - Raise the audio level
+    - Increase the speaker volume
+    - Louder, please
+    - Turn the volume up a bit
+    - Amplify the sound
+    - Pump up the volume
+
+- intent: volume_down
+  examples: |
+    - Decrease volume
+    - Turn down the sound
+    - Lower the volume
+    - Make it quieter
+    - Volume down
+    - Reduce the volume
+    - Lower my speaker volume
+    - Turn the volume lower
+    - Reduce the sound level
+    - It's too loud, lower the volume
+    - Drop the audio level
+    - Make the sound softer
+    - Set the volume to minimum
+    - Turn it down a notch
+    - Reduce the speaker output
+    - Lower the noise
+    - Turn down the music
+
+- intent: volume_mute
+  examples: |
+    - Mute the sound
+    - Turn off the volume
+    - Silence the audio
+    - Mute everything
+    - Mute my device
+    - No sound, please
+    - Turn off all audio
+    - Silence my phone
+    - Disable sound output
+    - Stop the sound
+    - Make my phone silent
+    - Set the volume to zero
+    - Mute the speaker
+    - I don’t want any noise
+    - Cut off all audio
+    - Block all sounds
+    - I need complete silence
+
+
+- intent: set_alarm
+  examples: |
+    - Set an alarm for [7](hour):[00](minute) [AM](period)
+    - Wake me up at [6](hour):[30](minute) [AM](period)
+    - Set an alarm at [8](hour):[15](minute) [PM](period)
+    - Set alarm for [Monday](date) at [6](hour):[00](minute) [AM](period)
+    - Schedule an alarm for [tomorrow](date) at [7](hour):[00](minute) [AM](period)
+    - Wake me up at [7](hour):[30](minute) [AM](period) on [Tuesday](date)
+    - Set alarm for [10th](date) of [December](month) at [5](hour):[45](minute) [AM](period)
+    - Remind me to wake up at [5](hour):[00](minute) [AM](period) on the [15th](date) of [June](month)
+    - Set an alarm for [5](hour):[30](minute) [AM](period)
+    - Wake me up at [9](hour):[00](minute) [PM](period)
+    - Alarm for [7](hour):[15](minute) [AM](period) on [Sunday](date) in [January](month)
+    - Schedule an alarm for [next Friday](date) at [6](hour):[45](minute) [AM](period)
+    - Wake me up at [5](hour):[20](minute) [AM](period)
+    - Set a daily alarm for [8](hour):[00](minute) [AM](period)
+    - Alarm at [10](hour):[30](minute) [PM](period) on [Saturday](date)
+    - Set my alarm for [the weekend](date) at [7](hour):[45](minute) [AM](period)
+    - Wake me up at [6](hour):[15](minute) [AM](period) on the [25th](date) of [March](month)
+    - Remind me to get up at [4](hour):[00](minute) [AM](period)
+    - I need an alarm at [9](hour):[30](minute) [AM](period) every [weekday](date)
+    - Schedule an alarm for [Christmas](date) at [6](hour):[30](minute) [AM](period)
+    - Set an alarm for [12](hour):[00](minute) [AM](period) on [New Year’s Eve](date)
+    - Set an alarm for [5](hour):[55](minute) [AM](period) in [August](month)
+    - I need an alarm at [7](hour):[10](minute) [AM](period) on the [last day of the month](date)
+
+  entities:
+      date:
+        - Monday
+        - Tuesday
+        - Wednesday
+        - Thursday
+        - Friday
+        - Saturday
+        - Sunday
+      hour:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 7
+        - 6
+        - 8
+        - 5
+        - 9
+        - 10
+        - 11
+        - 12
+      minute:
+        - 00
+        - 01
+        - 02
+        - 03
+        - 04
+        - 05
+        - 06
+        - 07
+        - 08
+        - 09
+        - 10
+        - 11
+        - 12
+        - 13
+        - 14
+        - 15
+        - 16
+        - 17
+        - 18
+        - 19
+        - 20
+        - 21
+        - 22
+        - 23
+        - 24
+        - 25
+        - 26
+        - 27
+        - 28
+        - 29
+        - 30
+        - 31
+        - 32
+        - 33
+        - 34
+        - 35
+        - 36
+        - 37
+        - 38
+        - 39
+        - 40
+        - 41
+        - 42
+        - 43
+        - 44
+        - 45
+        - 46
+        - 47
+        - 48
+        - 49
+        - 50
+        - 51
+        - 52
+        - 53
+        - 54
+        - 55
+        - 56
+        - 57
+        - 58
+        - 59
+        - 60
+      month:
+        - January
+        - February
+        - March
+        - April
+        - May
+        - June
+        - July
+        - August
+        - September
+        - October
+        - November
+        - December
+
+      period:
+        - AM
+        - PM
+  
